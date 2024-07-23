@@ -5,6 +5,7 @@
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blackpancake Home">
     <meta name="keywords" content="Blackpancake,Homepage">
@@ -18,19 +19,25 @@
     <style>
         @keyframes fade {
             100% {
-                backdrop-filter: blur(30px);
-                -webkit-backdrop-filter: blur(30px);
+                backdrop-filter: blur(30px) saturate(180%);
+                -webkit-backdrop-filter: blur(30px) saturate(180%);
                 /* backdrop-filter: grayscale(30%);
                 -webkit-backdrop-filter: grayscale(30%); */
             }
+
             0% {
-                backdrop-filter: none;
-                -webkit-backdrop-filter: none;
+                backdrop-filter: blur(0) saturate(180%);
+                -webkit-backdrop-filter: blur(0) saturate(180%);
             }
         }
 
         .fade-element {
             animation: fade 1.5s ease-in 1;
+        }
+
+        #panel {
+            background: url('https://i0.hdslb.com/bfs/article/2b039af9fc9846705027e2e588e30fc31729df6d.jpg@.webp') center no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
@@ -41,8 +48,8 @@
         <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
     </span>
     <header id="panel" class="panel-cover">
-        <div class="panel-main fade-element" style="backdrop-filter: blur(30px);
-                -webkit-backdrop-filter: blur(30px);">
+        <div class="panel-main fade-element" style="backdrop-filter: blur(30px) saturate(180%);
+                -webkit-backdrop-filter: blur(30px) saturate(180%);">
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content">
                     <div class="ih-item circle effect right_to_left">
@@ -126,7 +133,6 @@
         </div>
     </header>
     <script type="text/javascript" src="/assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
 </body>
 
 </html>
