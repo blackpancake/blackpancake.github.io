@@ -29,7 +29,7 @@ var iUp = (function () {
 
 function getBingImages(imgUrls) {
     var panel = document.querySelector('#panel');
-    panel.style.background = "url('" + "https://i0.hdslb.com/bfs/article/2b039af9fc9846705027e2e588e30fc31729df6d.jpg" + "') center center no-repeat #666";
+    panel.style.background = "url('" + "https://i0.hdslb.com/bfs/article/2b039af9fc9846705027e2e588e30fc31729df6d.jpg@1256w_746h_!web-article-pic.avif" + "') center center no-repeat #666";
     panel.style.backgroundSize = "cover";
     sessionStorage.setItem(indexName, index);
 }
