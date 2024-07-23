@@ -40,6 +40,19 @@
             background-size: cover;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.css"
+        integrity="sha384-NFTC4wvyQKLwuJ8Ez9AvPNBv8zcC2XaQzXSMvtORKw28BdJbB2QE8Ka+OyrIHcQJ" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.js"
+        integrity="sha384-z9arB7KJHppq8kK9AESncXcQd/KXIMMPiCrAdxfFpp+5QU438lgBE7UFGbk+gljP"
+        crossorigin="anonymous"></script>
+    <script>
+        window.onload = () => {
+            console.log(katex)
+            katex.render(String.raw`life = \displaystyle\int^{death}_{birth}study\mathrm{d}t`, document.getElementById("description"), {
+                throwOnError: false
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -77,9 +90,7 @@
                     </h1>
                     <p class="panel-cover__subtitle panel-subtitle iUp">Stay hungry, stay foolish.</p>
                     <hr class="panel-cover__divider iUp" />
-                    <p id="description" class="panel-cover__description iUp">暗昧处见光明世界，此心即白日青天。
-                        <br />
-                        <strong> - 《围炉夜话》</strong>
+                    <p id="description" class="panel-cover__description iUp">学习，永无止境。
                     </p>
                     <div class="navigation-wrapper iUp">
                         <div>
@@ -125,11 +136,6 @@
                 </div>
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
-        </div>
-        <div class="remark iUp">
-            <p class="power">Powered By
-                <a href="https://hitokoto.cn/" target="_blank"> Hitokoto </a>
-            </p>
         </div>
     </header>
     <script type="text/javascript" src="/assets/js/main.js"></script>
