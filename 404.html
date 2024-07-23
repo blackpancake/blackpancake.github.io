@@ -9,10 +9,12 @@
     <meta name="keywords" content="Blackpancake,Homepage">
     <meta name="author" content="Blackpancake">
     <title>知識の荒野に来たようです</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/onlinewebfonts.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/vno.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/iconfont.css">
     <style>
         #panel {
-            background: url('https://i0.hdslb.com/bfs/article/2b039af9fc9846705027e2e588e30fc31729df6d.jpg') center no-repeat;
+            background: url('https://i0.hdslb.com/bfs/article/2b039af9fc9846705027e2e588e30fc31729df6d.jpg@1256w_746h_!web-article-pic.avif') center no-repeat;
             background-size: cover;
         }
     </style>
@@ -21,15 +23,21 @@
 <body>
 
     <header id="panel" class="panel-cover">
-        <div class="panel-main fade-element">
+        <div class="panel-main fade-element" style="backdrop-filter: blur(80px);
+                -webkit-backdrop-filter: blur(80px);">
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content">
-                    <p class="panel-cover__title panel-title">404 Not Found</p>
-                    <a class="panel-cover__subtitle panel-subtitle" href="/">Click me to go back</a>
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <span>404 Not Found</span>
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">迷失</p>
+                    <hr class="panel-cover__divider iUp" />
+                    <div class="panel-cover__description iUp"><a href="/">Go back</a></div>
                 </div>
-                <div class="panel-cover--overlay" style="z-index: -1;"></div>
+                <div class="panel-cover--overlay" style="z-index: -1;opacity: .8"></div>
             </div>
     </header>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>
